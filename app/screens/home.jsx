@@ -3,6 +3,7 @@ import { Button, SafeAreaView, StyleSheet, View, Text } from "react-native";
 
 
 const Home =()=> {
+    // let isDark = true;
 
     return(
         < SafeAreaView  style={styles.home}>
@@ -16,7 +17,7 @@ const Home =()=> {
                 <Button title="New Group" styles={styles.btn}/>
             </View>
             <Text style={styles.encrypted}>🔒Your personal messages are 
-            <Text style={styles.span}> end-to-end encrypted</Text></Text>
+            <Text style={styles.span} > end-to-end encrypted</Text></Text>
         </SafeAreaView >
     )
 }
@@ -25,7 +26,16 @@ export default Home;
 
 
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create({    
+    darkTheme: {
+        backgroundColor: 'black',
+        color: 'white'
+    },
+    lightTheme: {
+        backgroundColor: 'white',
+        color: 'black'
+
+    },
     home: {
         width: '100%',
         height:'100%',
