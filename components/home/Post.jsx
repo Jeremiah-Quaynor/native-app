@@ -1,5 +1,10 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
+import { EvilIcons } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons'; 
+
+
+
 // import { Divider } from 'react-native-elements'
 
 
@@ -34,6 +39,8 @@ const Post = ({ post }) => {
             <PostFooter/>
             <Likes post={post} />
             <Caption post={post} />
+            <CommentSection post={post} />
+            <Comments post={post} />
         </View>
     </View>
   )
@@ -77,11 +84,15 @@ const PostFooter = ({ post })=> (
         <View style={styles.leftFooterIconContainer}>
             <Icon imgStyle={styles.footerIcon}  imgUrl={ postFootIcons[0].imageUrl}/>
             <Icon imgStyle={styles.footerIcon}  imgUrl={ postFootIcons[1].imageUrl}/>
-            <Icon imgStyle={[styles.footerIcon, styles.shareIcon]}  imgUrl={ postFootIcons[2].imageUrl}/>
+            <TouchableOpacity>
+                <EvilIcons name="sc-telegram" size={40} color="white" style={styles.footerIcon}/>
+            </TouchableOpacity>
+            {/* <Icon imgStyle={[styles.footerIcon, styles.shareIcon]}  imgUrl={ postFootIcons[2].imageUrl}/> */}
         </View>
-        <View style={{flex:1, alignItems: 'flex-end'}}>
-            <Icon imgStyle={styles.footerIcon}  imgUrl={ postFootIcons[3].imageUrl}/>
-        </View>
+        <TouchableOpacity style={{flex:1, alignItems: 'flex-end'}}>
+            <FontAwesome name="bookmark-o" size={26} color="white" style={styles.footerIcon}  />
+            {/* <Icon  imgUrl={ postFootIcons[3].imageUrl}/> */}
+        </TouchableOpacity>
     </View>
 )
 
@@ -105,6 +116,32 @@ const Caption = ({ post }) => (
         </Text>
     </View>
 )
+
+
+const CommentSection =({ post }) => (
+    <TouchableOpacity style={{  marginTop: 5 }}>
+        {!!post.comments.length && <Text style={{ color: 'grey'}}>
+            View {post.comments.length > 1 ? 'all': ''} {post.comments.length} {' '}
+            { post.comments.length >= 1 ? 'comments': 'No comment'}
+        </Text>}
+    </TouchableOpacity>
+)
+
+
+const Comments =({ post })=> (
+    <>
+        {post.comments.map((comment, index)=> (
+            <View key={index} style={{ marginTop: 4, flexDirection: 'row'}}>
+                <Text style={{ color: 'white'}}>
+                    <Text style={{ fontWeight: '700'}}>{comment.user} </Text>
+                    {comment.comment}
+                </Text>
+            </View>
+        ))}
+
+    </>
+)
+
 
 
 const styles = StyleSheet.create({
