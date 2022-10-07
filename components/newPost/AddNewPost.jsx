@@ -1,18 +1,20 @@
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons'; 
+import FormikPostUploader from './FormikPostUploader';
 
 
-const AddNewPost = () => (
+const AddNewPost = ({ navigation}) => (
     <View style={styles.container}>
-        <Header />
+        <Header navigation={navigation} />
+        <FormikPostUploader navigation={navigation}/>
     </View>
 )
 
 
-const Header = ()=> (   
+const Header = ({ navigation })=> (   
     <View style={styles.headerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={()=> navigation.goBack()}>
             <Ionicons name="chevron-back" size={30} color="white" />
         </TouchableOpacity>
         <Text style={styles.headerText}>NEW POST</Text>

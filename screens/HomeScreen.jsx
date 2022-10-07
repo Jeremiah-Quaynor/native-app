@@ -6,10 +6,10 @@ import Post from '../components/home/Post'
 import { POSTS } from '../data/posts'
 import BottomTabs, { bottomTabsIcons } from '../components/home/BottomTabs'
 
-export default function HomeScreen() {
+const HomeScreen = ({ navigation }) =>{
   return (
     <SafeAreaView style={styles.container}>
-        <Header />
+        <Header  navigation={ navigation}/>
         <ScrollView >
           <Stories />
           {POSTS.map((post, index)=> (
@@ -28,3 +28,6 @@ const styles = StyleSheet.create({
         flex: 1
     }
 })
+
+
+export default HomeScreen;
