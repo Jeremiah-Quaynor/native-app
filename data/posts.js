@@ -165,4 +165,75 @@ export const POSTS = [
             },
         ]
     },
+    {
+        imgUrl: 'https://thumbs.dreamstime.com/b/love-healing-stones-20804949.jpg',
+        users: USERS[1].user,
+        likes: 843,
+        caption: 'Train Ride To Hogwarts. 🚆🚆',
+        profile_picture: USERS[1].image,
+        comments: [
+            {
+                user: 'J-E-R-R-Y',
+                comment: 'That\'s wicked!!' 
+            },
+            {
+                user: 'HenReel',
+                comment: 'Epic bro!' 
+            },
+            {
+                user: 'Noeli',
+                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+            },
+        ]
+    },
+    {
+        imgUrl: 'https://thumbs.dreamstime.com/b/love-healing-stones-20804949.jpg',
+        users: USERS[1].user,
+        likes: 843,
+        caption: 'Train Ride To Hogwarts. 🚆🚆',
+        profile_picture: USERS[1].image,
+        comments: [
+            {
+                user: 'J-E-R-R-Y',
+                comment: 'That\'s wicked!!' 
+            },
+            {
+                user: 'HenReel',
+                comment: 'Epic bro!' 
+            },
+            {
+                user: 'Noeli',
+                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+            },
+        ]
+    },
+    {
+        imgUrl: 'https://thumbs.dreamstime.com/b/love-what-you-do-do-what-you-love-notes-pasted-blackboard-45598041.jpg',
+        users: USERS[2].user,
+        likes: 843,
+        caption: 'Train Ride To Hogwarts. 🚆🚆',
+        profile_picture: USERS[2].image,
+        comments: [
+            {
+                user: 'J-E-R-R-Y',
+                comment: 'That\'s wicked!!' 
+            },
+            {
+                user: 'HenReel',
+                comment: 'Epic bro!' 
+            },
+            {
+                user: 'Noeli',
+                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+            },
+            {
+                user: 'HenReel',
+                comment: 'Epic bro!' 
+            },
+            {
+                user: 'Noeli',
+                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+            },
+        ]
+    },
 ]
