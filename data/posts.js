@@ -95,23 +95,19 @@ export const POSTS = [
             },
             {
                 user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+                comment: 'D for daben' 
             },
             {
                 user: 'HenReel',
-                comment: 'Epic bro!' 
+                comment: 'You niggas de chill ' 
             },
             {
-                user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+                user: 'oe.jr',
+                comment: 'make you niggas commot for there go' 
             },
             {
-                user: 'HenReel',
-                comment: 'Epic bro!' 
-            },
-            {
-                user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+                user: 'dizenkogh',
+                comment: 'What is happening here' 
             },
         ]
     },
