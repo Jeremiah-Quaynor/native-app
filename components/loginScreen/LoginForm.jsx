@@ -4,6 +4,7 @@ import Validator from 'email-validator'
 import * as Yup from 'yup'
 // import firebase from '../../firebase'
 import React, {useState} from 'react'
+import EMAILS from '../../data/emails'
 
 const LoginForm = ( {navigation}) => {
     const LoginFormSchema = Yup.object().shape({
@@ -13,14 +14,31 @@ const LoginForm = ( {navigation}) => {
         .min(8, 'Your password has to be at least 8 characters')
     })
 
-    // const onLogin = async (email, password) => {
-    //     try{
-    //         await firebase.auth().signInWithEmailAndPassword(email,password)
-    //         console.log(" Firebase Login Successfull",email, password)
-    //     }catch(error ){
-    //         Alert(error.message)
-    //     }
-    // }
+
+    const onLogin = ({email, password}) => {
+
+
+        const result = EMAILS.find(({ user, passwrd }) => user === email && passwrd === password);
+        if(result != undefined){
+            console.log("Login Succesful")
+            navigation.push('HomeScreen')
+        }else{
+            Alert.alert('Invalid Details', "password or Username error. What would you like to do next??",
+            [{
+                text: 'OK',
+                onPress: ()=> console.log('Ok'),
+                style: 'cancel'
+            },
+            {
+                text: 'Sign Up',
+                onPress: ()=> navigation.push('SignUp'),
+                style: 'default'
+            }
+        ])
+        }
+        
+
+    }
 
 
     return (
@@ -28,10 +46,8 @@ const LoginForm = ( {navigation}) => {
 
         <Formik
         initialValues={{email: '', password: ''}}
-        onSubmit={(values) => {
-            console.log(values)
-            // onLogin(values.email, values.password)
-        }}
+        onSubmit={(values) => onLogin(values)
+        }
         validationSchema={LoginFormSchema}
         validateOnMount={true}
         >

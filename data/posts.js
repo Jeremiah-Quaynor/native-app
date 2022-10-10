@@ -138,7 +138,7 @@ export const POSTS = [
         likes: 843,
         caption: 'Train Ride To Hogwarts. 🚆🚆',
         profile_picture: USERS[2].image,
-        comments: [
+        comments: [  
             {
                 user: 'J-E-R-R-Y',
                 comment: 'That\'s wicked!!' 
