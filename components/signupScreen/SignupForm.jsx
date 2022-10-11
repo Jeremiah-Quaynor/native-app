@@ -1,8 +1,10 @@
-import { View, Text, TextInput, StyleSheet, Pressable, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Pressable, TouchableOpacity, Alert } from 'react-native'
 import { Formik } from 'formik'
 import Validator from 'email-validator'
 import * as Yup from 'yup'
 import React, {useState} from 'react'
+import EMAILS from '../../data/emails'
+
 
 
 const SignupForm = ( {navigation}) => {
@@ -14,15 +16,30 @@ const SignupForm = ( {navigation}) => {
         .min(8, 'Your password has to be at least 8 characters')
     })
 
+    const onSignup = ({email,password})=> {
+        console.log("Adding user")
+        // console.log(EMAILS.length)
+        EMAILS.push({user: email, passwrd: password})
+        // console.log(EMAILS)
+        Alert.alert('Account Creation Successfull', "Please Log In to View your account",
+        [{
+            text: 'Log In',
+            onPress: ()=> navigation.push('Login'),
+            style: 'default'
+        },
+        {
+            text: 'Cancel',
+            onPress: ()=> console.log("Canceling"),
+            style: 'cancel'
+        }
+    ])
+    }
 
     return (
     <View style={styles.wrapper}>
-
         <Formik
         initialValues={{email: '',username:'', password: ''}}
-        onSubmit={(values) => {
-            console.log(values)
-        }}
+        onSubmit={(values) =>onSignup(values)}
         validationSchema={SignupFormSchema}
         validateOnMount={true}
         >

@@ -16,16 +16,14 @@ const LoginForm = ( {navigation}) => {
 
 
     const onLogin = ({email, password}) => {
-
-
         const result = EMAILS.find(({ user, passwrd }) => user === email && passwrd === password);
         if(result != undefined){
-            console.log("Login Succesful")
+            console.log("Login Succesfull")
             navigation.push('HomeScreen')
         }else{
             Alert.alert('Invalid Details', "password or Username error. What would you like to do next??",
             [{
-                text: 'OK',
+                text: 'Do nothing',
                 onPress: ()=> console.log('Ok'),
                 style: 'cancel'
             },
@@ -36,9 +34,9 @@ const LoginForm = ( {navigation}) => {
             }
         ])
         }
-        
-
     }
+
+
 
 
     return (

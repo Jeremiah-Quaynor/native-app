@@ -14,7 +14,7 @@ export const POSTS = [
             },
             {
                 user: 'Noeli',
-                comment: 'Can I get a further😻😻😻' 
+                comment: 'Can I get a feather😻😻😻' 
             },
         ]
     },
