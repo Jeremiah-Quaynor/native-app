@@ -54,19 +54,19 @@ export const POSTS = [
     },
     {
         imgUrl: 'https://thumbs.dreamstime.com/b/happy-couple-love-travel-raised-hands-cliff-happy-couple-love-travel-raised-hands-cliff-norway-man-woman-112188598.jpg',
-        users: USERS[0].user,
+        users: USERS[4].user,
         likes: 7543,
         caption: 'Visiting Peru with my girlfriend',
-        profile_picture: USERS[0].image,
+        profile_picture: USERS[4].image,
         comments: [
         ]
     },
     {
         imgUrl: 'https://thumbs.dreamstime.com/b/%C3%B0%C2%90-happy-couple-love-23613262.jpg',
-        users: USERS[0].user,
+        users: USERS[5].user,
         likes: 843,
         caption: 'God When?????',
-        profile_picture: USERS[0].image,
+        profile_picture: USERS[5].image,
         comments: [
             {
                 user: 'Bismark',
@@ -84,10 +84,10 @@ export const POSTS = [
     },
     {
         imgUrl: 'https://thumbs.dreamstime.com/b/love-20845597.jpg',
-        users: USERS[0].user,
+        users: USERS[6].user,
         likes: 843,
         caption: 'I love you so much',
-        profile_picture: USERS[0].image,
+        profile_picture: USERS[6].image,
         comments: [
             {
                 user: 'Ann Opare-Akonor',
@@ -112,11 +112,11 @@ export const POSTS = [
         ]
     },
     {
-        imgUrl: 'https://thumbs.dreamstime.com/b/love-healing-stones-20804949.jpg',
-        users: USERS[1].user,
+        imgUrl: 'https://dailyguidenetwork.com/wp-content/uploads/2019/01/train.jpg',
+        users: USERS[7].user,
         likes: 843,
         caption: 'Train Ride To Hogwarts. 🚆🚆',
-        profile_picture: USERS[1].image,
+        profile_picture: USERS[7].image,
         comments: [
             {
                 user: 'J-E-R-R-Y',
@@ -134,10 +134,10 @@ export const POSTS = [
     },
     {
         imgUrl: 'https://thumbs.dreamstime.com/b/love-what-you-do-do-what-you-love-notes-pasted-blackboard-45598041.jpg',
-        users: USERS[2].user,
+        users: USERS[8].user,
         likes: 843,
         caption: 'Train Ride To Hogwarts. 🚆🚆',
-        profile_picture: USERS[2].image,
+        profile_picture: USERS[8].image,
         comments: [  
             {
                 user: 'J-E-R-R-Y',
@@ -162,11 +162,24 @@ export const POSTS = [
         ]
     },
     {
+        imgUrl: 'https://storage.googleapis.com/afs-prod/media/e53811360eed4b8ba26b5f635d703a7c/400.jpeg',
+        users: USERS[9].user,
+        likes: 843,
+        caption: 'Movies movies movies movies🔥🔥🔥🔥🔥🔥',
+        profile_picture: USERS[9].image,
+        comments: [
+            {
+                user: 'J-E-R-R-Y',
+                comment: 'I want to watch some!!' 
+            },
+        ]
+    },
+    {
         imgUrl: 'https://thumbs.dreamstime.com/b/love-healing-stones-20804949.jpg',
-        users: USERS[1].user,
+        users: USERS[10].user,
         likes: 843,
         caption: 'Train Ride To Hogwarts. 🚆🚆',
-        profile_picture: USERS[1].image,
+        profile_picture: USERS[10].image,
         comments: [
             {
                 user: 'J-E-R-R-Y',
@@ -183,52 +196,27 @@ export const POSTS = [
         ]
     },
     {
-        imgUrl: 'https://thumbs.dreamstime.com/b/love-healing-stones-20804949.jpg',
-        users: USERS[1].user,
+        imgUrl:'https://deadline.com/wp-content/uploads/2022/09/magic-mike.jpg?w=681&h=383&crop=1',
+        users: USERS[11].user,
         likes: 843,
-        caption: 'Train Ride To Hogwarts. 🚆🚆',
-        profile_picture: USERS[1].image,
+        caption: 'Magic mike is the best',
+        profile_picture: USERS[11].image,
         comments: [
             {
                 user: 'J-E-R-R-Y',
-                comment: 'That\'s wicked!!' 
+                comment: 'idiot' 
             },
             {
                 user: 'HenReel',
-                comment: 'Epic bro!' 
+                comment: 'you like naked men ooo' 
             },
             {
-                user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
-            },
-        ]
-    },
-    {
-        imgUrl: 'https://thumbs.dreamstime.com/b/love-what-you-do-do-what-you-love-notes-pasted-blackboard-45598041.jpg',
-        users: USERS[2].user,
-        likes: 843,
-        caption: 'Train Ride To Hogwarts. 🚆🚆',
-        profile_picture: USERS[2].image,
-        comments: [
-            {
-                user: 'J-E-R-R-Y',
-                comment: 'That\'s wicked!!' 
+                user: 'Bis_mark',
+                comment: 'I can dress like this' 
             },
             {
-                user: 'HenReel',
-                comment: 'Epic bro!' 
-            },
-            {
-                user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
-            },
-            {
-                user: 'HenReel',
-                comment: 'Epic bro!' 
-            },
-            {
-                user: 'Noeli',
-                comment: '🔥🔥🔥🔥🔥🔥🔥' 
+                user: 'Bad Boy JT',
+                comment: 'I have all the bitches' 
             },
         ]
     },
