@@ -17,7 +17,7 @@ const HomeScreen = ({ navigation }) =>{
           ))}
 
         </ScrollView>
-        <BottomTabs icons={bottomTabsIcons}/>
+        <BottomTabs icons={bottomTabsIcons} navigation={ navigation}/>
     </SafeAreaView>
   )
 }
