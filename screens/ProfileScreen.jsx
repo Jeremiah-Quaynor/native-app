@@ -2,17 +2,16 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import ProfileHeader from '../components/Profile/ProfileHeader'
 import BottomTabs, { bottomTabsIcons } from '../components/home/BottomTabs'
-import { Divider } from 'react-native-elements'
+import UserDetails from '../components/Profile/UserDetails'
+import EditSection from '../components/Profile/EditSection'
 
 const ProfileScreen = ({navigation}) => {
   return (
     <View style={{ backgroundColor: 'black', flex: 1}}>
-        <ProfileHeader />
-        <Divider width={2} orientation={'vertical'}/>
-
-
+        <ProfileHeader navigation={navigation}/>
+        <UserDetails />
+        <EditSection />
         <BottomTabs icons={bottomTabsIcons} navigation={ navigation}/>
-
     </View>
   )
 }
