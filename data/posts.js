@@ -220,4 +220,29 @@ export const POSTS = [
             },
         ]
     },
+    {
+        imgUrl:'https://deadline.com/wp-content/uploads/2022/09/magic-mike.jpg?w=681&h=383&crop=1',
+        users: USERS[11].user,
+        likes: 843,
+        caption: 'Magic mike is the best',
+        profile_picture: USERS[11].image,
+        comments: [
+            {
+                user: 'J-E-R-R-Y',
+                comment: 'idiot' 
+            },
+            {
+                user: 'HenReel',
+                comment: 'you like naked men ooo' 
+            },
+            {
+                user: 'Bis_mark',
+                comment: 'I can dress like this' 
+            },
+            {
+                user: 'Bad Boy JT',
+                comment: 'I have all the bitches' 
+            },
+        ]
+    }
 ]

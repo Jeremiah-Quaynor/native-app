@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-const EditSection = () => {
+const EditSection = ({navigation}) => {
   return (
     <View>
         <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-evenly', marginVertical: 15}}>

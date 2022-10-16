@@ -14,15 +14,15 @@ const UserDetails = () => {
         </View>
         <View style={{ flexDirection: 'row' , width: '55%', alignSelf:'center',}}>
                 <View style={{ marginRight: 25}}>
-                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>8</Text>
+                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>0</Text>
                     <Text style={styles.rating}>Posts</Text>
                 </View>
                 <View style={{ marginRight: 25}}>
-                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>10,000</Text>
+                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>10,234</Text>
                     <Text style={styles.rating}>Followers</Text>
                 </View>
                 <View>
-                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>2000</Text>
+                    <Text style={[styles.rating, {fontSize:20, fontWeight: 'bold'}]}>678</Text>
                     <Text style={styles.rating}>Following</Text>
                 </View>
         </View>

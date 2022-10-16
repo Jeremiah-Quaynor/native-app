@@ -10,7 +10,7 @@ const ProfileScreen = ({navigation}) => {
     <View style={{ backgroundColor: 'black', flex: 1}}>
         <ProfileHeader navigation={navigation}/>
         <UserDetails />
-        <EditSection />
+        <EditSection navigation={navigation} />
         <BottomTabs icons={bottomTabsIcons} navigation={ navigation}/>
     </View>
   )
