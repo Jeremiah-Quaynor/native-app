@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 
-const EditSection = ({navigation}) => {
+const EditSection = () => {
   return (
     <View>
         <View style={{ flexDirection: 'row', width: '100%', justifyContent: 'space-evenly', marginVertical: 15}}>
@@ -23,7 +23,7 @@ const EditSection = ({navigation}) => {
 export default EditSection
 
 
-const StoryHighlights =() => (
+const StoryHighlights =({navigation}) => (
     <TouchableOpacity style={{ flexDirection: 'row', justifyContent:'space-between', marginHorizontal:10, marginVertical: 10}}>
         <Text style={{ color: 'white', fontSize:20}}>Story highlights</Text>
         <MaterialCommunityIcons name="menu-down" size={24} color="white" />
