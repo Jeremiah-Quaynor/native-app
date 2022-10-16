@@ -6,7 +6,7 @@ const UserDetails = () => {
   return (
     <View style={{flexDirection: 'row', justifyContent: 'space-around'}}>
         <View>
-            <Image source={{ uri : `${USERS[0].image}`}} style={styles.profile}/>
+            <Image source={{ uri : `${USERS[1].image}`}} style={styles.profile}/>
             <Text style={styles.text}>Software Engineer</Text>
             <Text style={styles.text}>Fullstack Developer</Text>
             <Text style={styles.text}>Mobile Developer</Text>
