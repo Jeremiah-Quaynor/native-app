@@ -23,7 +23,7 @@ const EditSection = () => {
 export default EditSection
 
 
-const StoryHighlights =({navigation}) => (
+const StoryHighlights =() => (
     <TouchableOpacity style={{ flexDirection: 'row', justifyContent:'space-between', marginHorizontal:10, marginVertical: 10}}>
         <Text style={{ color: 'white', fontSize:20}}>Story highlights</Text>
         <MaterialCommunityIcons name="menu-down" size={24} color="white" />
