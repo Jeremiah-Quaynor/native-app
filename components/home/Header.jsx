@@ -1,4 +1,5 @@
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 
 const Header = ({ navigation}) => {
@@ -20,12 +21,7 @@ const Header = ({ navigation}) => {
             </TouchableOpacity>
             
             <TouchableOpacity>
-                <Image 
-                    source={{
-                        uri: 'https://img.icons8.com/fluency-systems-regular/60/ffffff/like--v1.png'
-                    }} 
-                    style={styles.icon}
-                    />
+            <AntDesign name="hearto" size={24} color="white" style={styles.icon} />
             </TouchableOpacity>
 
             <TouchableOpacity>

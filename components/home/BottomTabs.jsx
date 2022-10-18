@@ -41,6 +41,7 @@ const BottomTabs = ({ icons, navigation }) => {
             setActiveTab(icon.name)
         }}
         >
+            {/* {icons.active} */}
             <Image source={{ uri: activeTab === icon.name ? icon.active: icon.inactive}} 
             style={[styles.icon, icon.name === 'Profile'? styles.profilePic: null]} />
         </TouchableOpacity>
