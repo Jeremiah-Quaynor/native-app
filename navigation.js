@@ -6,6 +6,7 @@ import NewPost from './screens/NewPostScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import Menu from './screens/Menu';
 
 
 
@@ -25,6 +26,8 @@ export const SignedInStack = () => {
             <Stack.Screen name='Login' component={LoginScreen} />
             <Stack.Screen name='SignUp' component={SignUpScreen} />
             <Stack.Screen name='ProfileScreen' component={ProfileScreen} />
+            <Stack.Screen name='MenuScreen' component={Menu} />
+
         </Stack.Navigator>
     </NavigationContainer>
     )

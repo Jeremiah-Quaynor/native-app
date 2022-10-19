@@ -21,7 +21,7 @@ const ProfileHeader = ({navigation}) => {
                     style={styles.icon}
                     />
             </TouchableOpacity>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.push('Menu')}>
               <Ionicons name="ios-menu" size={30} color="white" style={{ marginLeft: 10}}/>
             </TouchableOpacity>
         </View>
