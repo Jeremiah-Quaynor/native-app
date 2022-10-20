@@ -24,7 +24,7 @@ const Header = ({ navigation}) => {
             <AntDesign name="hearto" size={24} color="white" style={styles.icon} />
             </TouchableOpacity>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={()=> navigation.push('ChatsScreen')}>
                 <View style={styles.unreadBadge}>
                     <Text style= {styles.unreadBadgeText}>15</Text>
                 </View>

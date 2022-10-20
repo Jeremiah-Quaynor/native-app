@@ -7,6 +7,7 @@ import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import Menu from './screens/Menu';
+import ChatsScreen from './screens/ChatsScreen';
 
 
 
@@ -27,6 +28,7 @@ export const SignedInStack = () => {
             <Stack.Screen name='SignUp' component={SignUpScreen} />
             <Stack.Screen name='ProfileScreen' component={ProfileScreen} />
             <Stack.Screen name='MenuScreen' component={Menu} />
+            <Stack.Screen name='ChatsScreen' component={ChatsScreen} />
 
         </Stack.Navigator>
     </NavigationContainer>
