@@ -15,7 +15,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'black',
     color:  'white'
+  },
+  card: {
+    flexDirection: 'column',
+    backgroundColor: 'white'
   }
+
 })
 
 export default Explorer
